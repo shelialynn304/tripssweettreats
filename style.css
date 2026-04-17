@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+              url('assets/hero.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.card {
+  background: #111;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* ANIMATION BASE STATES */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-80px);
+}
+
+/* DELAYS */
+.delay { transition-delay: 0.2s; }
+.delay2 { transition-delay: 0.4s; }
